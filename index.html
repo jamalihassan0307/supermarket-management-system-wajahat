@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermarket Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Supermarket Management System</h1>
+      <div class="nav-stats">
+        <span>Total Products: <span id="totalProducts">0</span></span>
+        <span>Total Bills: <span id="totalBills">0</span></span>
+        <span>Total Revenue: $<span id="totalRevenue">0</span></span>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="showProductForm()">Add Product</button>
+        <button onclick="showOrderForm()">Make Order</button>
+        <button onclick="showBillsList()">View Bills</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <!-- Add Product Form -->
+      <div id="productForm" class="form-section hidden">
+        <h2>Product Management</h2>
+        <form onsubmit="return addProduct(event)">
+          <input type="hidden" id="editProductId" />
+          <input
+            type="text"
+            placeholder="Product Name"
+            id="productName"
+            required
+          />
+          <input type="number" placeholder="Price" id="productPrice" required />
+          <button type="submit" id="productSubmitBtn">Add Product</button>
+          <button
+            type="button"
+            onclick="return cancelEdit()"
+            id="cancelEditBtn"
+            class="hidden"
+          >
+            Cancel Edit
+          </button>
+        </form>
+        <div id="productList" class="data-list">
+          <h3>Products List</h3>
+          <div id="productsContainer"></div>
+        </div>
+      </div>
+
+      <!-- Make Order Form -->
+      <div id="orderForm" class="form-section hidden">
+        <h2>Create New Order</h2>
+        <form onsubmit="return createOrder(event)">
+          <input
+            type="text"
+            placeholder="Customer Name"
+            id="customerName"
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            id="phoneNumber"
+            required
+          />
+          <div id="productSelection">
+            <select id="productSelect">
+              <!-- Products will be loaded here -->
+            </select>
+            <input
+              type="number"
+              placeholder="Quantity"
+              id="quantity"
+              min="1"
+              value="1"
+            />
+            <button type="button" onclick="addToCart()">Add to Cart</button>
+          </div>
+          <div id="cart">
+            <h3>Cart</h3>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="cartTotal">0</span></p>
+          </div>
+          <button type="submit">Generate Bill</button>
+        </form>
+      </div>
+
+      <!-- Bills List -->
+      <div id="billsList" class="form-section hidden">
+        <h2>Bills History</h2>
+        <div id="billsContainer">
+          <!-- Bills will be loaded here -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

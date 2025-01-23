@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --success-color: #2ecc71;
+  --text-color: #2c3e50;
+  --light-bg: #ecf0f1;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* Login Page Styles */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.login-container h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-stats {
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-stats span {
+  font-size: 0.9rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* Button Styles */
+button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-buttons button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.nav-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.form-section {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  scroll-margin-top: 100px;
+}
+
+.form-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--light-bg);
+  padding-bottom: 0.5rem;
+}
+
+/* Card Styles */
+.data-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.data-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.data-card .info h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.data-card .info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Action Buttons */
+.edit-btn {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.delete-btn {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  filter: brightness(110%);
+  transform: translateY(-2px);
+}
+
+/* Bill Card Styles */
+.bill-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin: 1rem 0;
+}
+
+.bill-card h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bill-total {
+  font-size: 1.2rem;
+  color: var(--success-color);
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--light-bg);
+}
+
+/* Cart Styles */
+#cart {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+#cartItems {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+#cartItems li {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--light-bg);
+  color: var(--text-color);
+}
+
+/* Form Input Styles */
+input,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+/* Add styles for active navigation button */
+.nav-buttons button.active {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the whole page */
+}
+
+/* Add these styles for the update button */
+.update-btn {
+  background-color: var(--secondary-color) !important;
+  color: var(--white) !important;
+}
+
+#productSubmitBtn {
+  background-color: var(--success-color);
+  color: var(--white);
+}
+
+#cancelEditBtn {
+  background-color: var(--accent-color);
+  margin-left: 10px;
+}
+
+/* Add these styles for button visibility */
+#productSubmitBtn {
+  display: inline-block;
+}
+
+#cancelEditBtn.hidden {
+  display: none;
+}
