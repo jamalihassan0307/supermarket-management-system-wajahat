@@ -1,5 +1,6 @@
 <div align="center">
       <h1> <img src="screenshots/about.png" width="80px"><br/>Car Rental System</h1>
+      <h3>A Modern Vehicle Management Solution</h3>
 </div>
 
 <p align="center">
@@ -14,7 +15,11 @@
     </a>
 </p>
 
-# Tech Used
+# 📌 Overview
+
+A comprehensive car rental management system that streamlines vehicle rentals, user management, and booking processes. Built with modern web technologies, this system offers an intuitive interface for both administrators and customers.
+
+# 🛠️ Tech Stack
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
