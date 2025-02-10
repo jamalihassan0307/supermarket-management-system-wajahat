@@ -66,7 +66,7 @@ function validateLogin(event) {
   const password = document.getElementById("password").value;
 
   // Simple validation (in real app, this should be more secure)
-  if (username === "admin" && password === "admin123") {
+  if (username === "demo" && password === "1234") {
     // Store login state in sessionStorage
     sessionStorage.setItem("isLoggedIn", "true");
     window.location.href = "index.html";
