@@ -1,10 +1,10 @@
 <div align="center">
-      <h1> <img src="screenshots/about.png" width="80px"><br/>Car Rental System</h1>
-      <h3>A Modern Vehicle Management Solution</h3>
+      <h1> <img src="screenshots/about.png" width="80px"><br/>Supermarket Management System</h1>
+      <h3>A Modern Retail Management Solution</h3>
 </div>
 
 <p align="center">
-    <a href="https://jamalihassan0307.github.io/Car-Rental-System-zh" target="_blank">
+    <a href="https://jamalihassan0307.github.io/supermarket-management-system-wajahat/" target="_blank">
         <img alt="" src="https://img.shields.io/badge/Website-EA4C89?style=normal&logo=dribbble&logoColor=white" style="vertical-align:center" />
     </a>
     <a href="https://web.facebook.com/profile.php?id=61558862693997" target="_blank">
@@ -17,7 +17,7 @@
 
 # 📌 Overview
 
-A comprehensive car rental management system that streamlines vehicle rentals, user management, and booking processes. Built with modern web technologies, this system offers an intuitive interface for both administrators and customers.
+A comprehensive supermarket management system that streamlines product management, order processing, and billing operations. Built with modern web technologies, this system offers an intuitive interface for store administrators and staff.
 
 # 🛠️ Tech Stack
 
@@ -26,11 +26,9 @@ A comprehensive car rental management system that streamlines vehicle rentals, u
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![LocalStorage](https://img.shields.io/badge/LocalStorage-FF9E0F?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAQQAAAEEBc1JoYgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABUSURBVCiRY/z//z8DKYCJgURAtkYWBgYGBiYGBoZ/IAaQz8DAwMDIyMjA+P//f4b////D2egApHbV/////2MzCVnx////YWwSNI7i5CRFIwsDAwMAoRAX4PlxqrAAAAAASUVORK5CYII=&logoColor=white)
 
-A modern web-based car rental system built with vanilla JavaScript, featuring car management, rental tracking, and user management.
-
 ## 🔴 Live Demo
 
-Check out the live: [Car Rental System Demo](https://jamalihassan0307.github.io/Car-Rental-System-zh)
+Check out the live demo: [Supermarket Management System](https://jamalihassan0307.github.io/supermarket-management-system-wajahat/)
 
 ### Demo Credentials
 
@@ -39,89 +37,67 @@ Check out the live: [Car Rental System Demo](https://jamalihassan0307.github.io/
 
 ## 📸 Screenshots
 
-### User Journey
+### System Features
 
-#### 1. Login Page
+#### 1. Login Interface
 
 ![Login Page](screenshots/login.png)
-_Secure authentication interface_
+_Secure authentication system for staff access_
 
-#### 2. Dashboard Overview
+#### 2. Product Management
 
-![Dashboard](screenshots/home.png)
-![Dashboard Stats](screenshots/home1.png)
-_Main dashboard with rental statistics_
+![Product Management](screenshots/product_manage.png)
+_Comprehensive product listing and management interface_
 
-#### 3. About Page
+#### 3. Add New Product
 
-![About](screenshots/about.png)
-![Team](screenshots/about1.png)
-![Services](screenshots/about2.png)
-![Contact](screenshots/about3.png)
-_About section with team and services information_
+![Add Product](screenshots/add_product.png)
+_Interface for adding new products to inventory_
 
-#### 4. Car Management
+#### 4. Create New Order
 
-![Cars Page](screenshots/car_page.png)
-![Car Listings](screenshots/car_page1.png)
-![More Cars](screenshots/car_page2.png)
-_Car inventory and management interface_
+![Create Order](screenshots/create_new_order.png)
+_Streamlined order creation process_
 
-#### 5. Add New Car
+#### 5. Bill History
 
-![Add Car](screenshots/add_car.png)
-_Interface for adding new vehicles_
-
-#### 6. Rental Details
-
-![Rental Details](screenshots/car_page_rental_detail.png)
-![More Rental Info](screenshots/car_page_rental_detail1.png)
-_Detailed rental information_
-
-#### 7. User Management
-
-![New User](screenshots/new_user_record_add.png)
-_Add new users to the system_
-
-#### 8. Rental Process
-
-![Get User Details](screenshots/rant_car_getuserdetail.png)
-![User Rental Details](screenshots/user_detail_car_rent.png)
-_Complete rental process workflow_
+![Bill History](screenshots/bill_history.png)
+_Detailed billing history and transaction records_
 
 ## 🚀 Features
 
-- **User Authentication**
+- **Product Management**
 
-  - Secure login system
-  - Protected routes
-  - Session management
+  - Add new products
+  - Edit existing products
+  - Update inventory
+  - Product categorization
 
-- **Car Management**
+- **Order Processing**
 
-  - Add new cars
-  - Edit existing cars
-  - Update availability
-  - Search cars
+  - Create new orders
+  - Add multiple items
+  - Calculate totals
+  - Process transactions
 
-- **Rental Management**
+- **Billing System**
 
-  - Create new rentals
-  - Track rental status
-  - View rental history
-  - Process returns
+  - Generate bills
+  - View transaction history
+  - Track daily revenue
+  - Print receipts
 
 - **User Management**
 
-  - Add new users
-  - Track user rentals
-  - Manage user profiles
+  - Secure login system
+  - Role-based access
+  - Session management
 
 - **Dashboard**
-  - Total cars overview
-  - Active rentals
-  - Available cars
-  - Recent activities
+  - Total products overview
+  - Daily sales summary
+  - Revenue statistics
+  - Recent transactions
 
 ## 🛠️ Built With
 
